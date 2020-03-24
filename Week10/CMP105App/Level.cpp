@@ -6,7 +6,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
-
+	tileObject.getWindow(hwnd);
 }
 
 Level::~Level()
@@ -30,7 +30,7 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-
+	tileObject.render();
 	endDraw();
 }
 
